@@ -19,11 +19,12 @@ public final class AddressBook {
     }
 
     public void setAddress(Person person, String street, int house, int flat) { //Setting a new address for a person
-        person.set(street, house, flat);
+        if (list.contains(person)) person.set(street, house, flat);
     }
 
     public String getAddress(Person person) { //Receiving an address of a person
-        return person.get();
+        if (list.contains(person)) return person.get();
+        else throw new IllegalArgumentException("No such person in a book");
     }
 
     public List<String> findByStreet(String street) { //Finding people living on a particular street
