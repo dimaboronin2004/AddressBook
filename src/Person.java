@@ -11,41 +11,41 @@ public final class Person {
         this.flat = flat;
     }
 
-    String get() { //Receiving an address of a concrete person
+    public String get() { //Receiving an address of a concrete person
         return "" + this.street + ", " + this.house + ", " + this.flat;
     }
 
-    String getSurname() {
+    public String getSurname() {
         return this.surname;
     }
 
-    String getStreet() {
+    public String getStreet() {
         return this.street;
     }
 
-    int getHouse() {
+    public int getHouse() {
         return this.house;
     }
 
-    int getFlat() {
+    public int getFlat() {
         return this.flat;
     }
 
-    void set(String street, int house, int flat) { //Setting new address
+    public void set(String street, int house, int flat) { //Setting new address
         this.street = street;
         this.house = house;
         this.flat = flat;
     }
 
-    void setStreet(String street){
+    public void setStreet(String street){
         this.street = street;
     }
 
-    void setHouse(int house) {
+    public void setHouse(int house) {
         this.house = house;
     }
 
-    void setFlat(int flat){
+    public void setFlat(int flat){
         this.flat = flat;
     }
 }
